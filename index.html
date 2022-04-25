@@ -1,11 +1,74 @@
 <!doctype HTML>
-<html lang="pt-br>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Rafael Alexandre | Git</title>
-    </head>
+<html lang="PT-BR">
+  <head>
+    <title>Rafael Alexandre | {{titulo}}</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="css\style.css"/>
+    <link rel="stylesheet" type="text/css" href="css\animation.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="container flex-col" id="topo">
     
-    <body>
-        Em construção...
-    </body>
+    <header class="container flex-row js-center al-center">
+      <nav class="container gap-2">
+        <a href="/"><i class="bi bi-house"></i> Home</a>
+        <a href="/Sobre"><i class="bi bi-file-person"></i> Sobre Mim</a>
+        <a href="/Projetos"><i class="bi bi-folder-check"></i> Projetos</a>
+        <a href="/Contato"><i class="bi bi-envelope"></i> Contato</a>
+      </nav>
+    </header>
+
+    <main id="home" class="container flex-col js-center al-center gap-1">
+      <section>
+        <div class="container flex-col js-center al-center">
+          <img class="img-perfil anim-one animate fadeIn" src="img\perfil.jpeg"/>
+          <h2 class="anim-one animate fadeIn">Rafael Alexandre</h2>
+          <h3 class="anim-two animate fadeIn">Desenvolvedor</h3>
+        </div>
+      </section>
+
+      <section class="container flex-col text-code text-center">
+        <h4 class="anim-three animate fadeIn"><span class="code-pink">Seja</span> <span class="code-blue">bem_vindo()</span></h4>
+        <p class="hidden-sm type anim-four">Clique nas opções acima para navegar no site;</p>
+
+        <p class="show-sm anim-four animate fadeIn">Clique nas opções</p>
+        <p class="show-sm anim-four animate fadeIn">acima para navegar no site;<span class="blink">|</span></p>
+      </section>
+      
+    </main>
+    
+    <footer>
+      <div class="container flex-row col-sm gap-1">
+
+        <div class="flex-1">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li><a href="{{a:linkedin}}" target="_blank">LinkedIn</a></li>
+            <li><a href="{{a:github}}" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div class="flex-1 text-center" style="margin-top: auto">
+          &copy Rafael Alexandre - 2022
+        </div>
+
+        <div class="flex-1 text-right">
+          <a href="#topo">Ir para Topo. <i class="bi bi-arrow-up"></i></a>
+        </div>
+
+      </div>
+    </footer>
+  </body>
 </html>
